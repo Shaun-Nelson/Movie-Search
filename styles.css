@@ -26,9 +26,9 @@
     max-width: 5em;
 }
 
-#runtime {
+/* #runtime {
     padding-right: 35px;
-}
+} */
 
 #title, #year, #runtime {
     text-shadow: 1px 1px #000000c5;
