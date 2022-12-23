@@ -1,4 +1,4 @@
-API_ENDPOINT = "http://www.omdbapi.com/?";
+API_ENDPOINT = "https://www.omdbapi.com/?";
 API_KEY = "ba81ecf8";
 SEARCH = "Blade Runner";
 
