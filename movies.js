@@ -8,7 +8,6 @@ const runtime = document.getElementById("runtime");
 const poster = document.getElementById("poster");
 const btn = document.getElementById("btn-submit");
 const errorWarn = document.getElementById("error-warn");
-const errorWarnToggle = false;
 const searchBar = document.getElementById("searchbar");
 
 //returns a Promise containing json data about the movie searched
@@ -28,13 +27,13 @@ const updateMovie = (movie) => {
 
 const handleSubmit = async () => {
   const movie = await getMovie(searchBar.value);
-  movie.Response === "False" && !errorWarnToggle
+  movie.Response === "False"
     ? (errorWarn.textContent = "Movie not found. Please try again...")
     : (errorWarn.textContent = "");
   updateMovie(movie);
 };
 
-btn.addEventListener("click", handleSubmit);
+// btn.addEventListener("click", handleSubmit);
 searchBar.addEventListener("input", handleSubmit);
 getMovie(SEARCH).then(
   (res) => updateMovie(res),

@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
@@ -17,10 +19,10 @@
         placeholder="Please enter a movie title..."
         required
         ></input>
-      <button 
+      <!-- <button 
         id='btn-submit' 
         type="submit">Search
-      </button>
+      </button> -->
       <div id="error-warn"></div>
       </form>
 
@@ -31,8 +33,9 @@
     <h3 id="runtime"></h3>
     
     </div>
-    <img id="poster" src="" />
-
+    <div class="img-container">
+      <img id="poster" src="" />
+    </div>
     <script src="movies.js"></script>
   </body>
 </html>
